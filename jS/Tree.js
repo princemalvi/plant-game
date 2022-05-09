@@ -55,12 +55,14 @@ class Tree {
         // else
         this.isLocked = true;
         this.obj.classList.add("stem-out");
+        this.tag.style.visibility = "visible";
         console.log("YOu selected " + this.type);
         this.writeType();
     }
     deselectTree() {
         this.obj.classList.remove("stem-out");
-        this.tag.innerHTML = "";
+        this.tag.style.visibility = "hidden";
+        // this.tag.innerHTML = "";
     }
     updateTree(pt, width, height) {
         this.pt = pt;
