@@ -2,6 +2,9 @@ var totalRows = 3;
 var totalCols = 10;
 var gameHeight;
 var gameWidth;
+window.onscroll = () => {
+    updatePoints();
+};
 window.onresize = () => {
     setHightWIdth();
     updatePoints();
