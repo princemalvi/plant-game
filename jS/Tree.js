@@ -60,8 +60,8 @@ class Tree {
         this.writeType();
     }
     deselectTree() {
-        this.obj.classList.remove("stem-out");
         this.tag.style.visibility = "hidden";
+        this.obj.classList.remove("stem-out");
         // this.tag.innerHTML = "";
     }
     updateTree(pt, width, height) {

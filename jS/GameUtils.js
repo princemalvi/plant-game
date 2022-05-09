@@ -22,7 +22,7 @@ function updatePoints() {
 }
 function drawTrees() {
     // alert(window.innerWidth)
-    if (window.screen.width > 992) {
+    if (screen.width > 992) {
         totalRows = 3;
         totalCols = 10;
         // alert(totalRows + "  " + totalCols)
@@ -49,10 +49,9 @@ function drawTrees() {
             tree_container.style.width = gameWidth + "px";
             tree_tag_container.appendChild(tree_container);
             var tag_container = document.createElement("div");
-            // tag_container.innerHTML = "dd";
+            tag_container.innerHTML = "dd";
+            tag_container.style.visibility = " hidden";
             tag_container.id = "tag" + i + "_" + j;
-            tag_container.innerHTML = "DD";
-            tag_container.style.visibility = "hidden";
             // console.log("id: "+tag_container.id);
             tag_container.className = "tag-container";
             tree_tag_container.appendChild(tag_container);
