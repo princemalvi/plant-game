@@ -62,6 +62,7 @@ btnNextGen.onclick = function () {
     // writeAlltypes();
     btnNextGen.style.display = "none";
     genLevel.innerHTML = "Generation Level: " + genCount;
+    updatePoints();
 };
 btnPlayAgain.onclick = function () {
     deSelectTrees();
