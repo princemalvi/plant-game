@@ -1,0 +1,71 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tree game</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="instruction-main-container">
+                <div class="game-instruction" id="game-instruction">
+                    We have 30 Healthy plants of which the 10 DD gene plants, 15
+                    Dd gene plants, and 5 dd gene plants. From these, we want to
+                    select plant parents to create as many surviving plants
+                    continuously across generations.<br /><br />
+                    In the first step select two parent plants for
+                    cross-breeding:
+                </div>
+                <div id="genLevel" class="gen-level">Generation Level: 1</div>
+            </div>
+            <div id="game-main-container" class="game-main-container">
+                <div class="game-container">
+                    <div id="game" class="game"></div>
+                </div>
+                <div id="" class="score-container">
+                    <div class="emojis" id="emojis">
+                        <p id="emoji" class="emoji"></p>
+                    </div>
+                    <div class="score_img_div" id="scoreImgDiv">
+                        <img
+                            src=""
+                            id="scoreDescription"
+                            class="score_description"
+                        />
+                    </div>
+                    <div class="score" id="score">
+                        <h3>
+                            Score =
+                            <p id="percent" class="percent">80%</p>
+                        </h3>
+                    </div>
+                    <div class="cal_main" id="calMain">
+                        <h3 class="cal_dd" id="score_details"></h3>
+                    </div>
+                    <div class="next-generation">
+                        <button class="btn-next-generation" id="btnNextGen">
+                            Next Generation
+                        </button>
+                        <button class="btn-next-generation" id="btnPlayAgain">
+                            Play Again
+                        </button>
+                        <button class="btn-next-generation" id="btnTestingTool">
+                            Testing Tool
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cursor"></div>
+        <script src="jS/Tree.js"></script>
+        <script src="jS/GameUtils.js"></script>
+
+        <script src="jS/GameApp.js"></script>
+    </body>
+</html>
+
+
